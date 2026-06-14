@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import {
-  Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle, DialogTrigger,
+  Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger,
 } from "@/components/ui/dialog";
 import {
   AlertDialog, AlertDialogAction, AlertDialogCancel, AlertDialogContent,
@@ -93,6 +93,7 @@ const Doctors = () => {
           <DialogContent data-testid="doctor-dialog">
             <DialogHeader>
               <DialogTitle>{editingId ? "Edit doctor" : "Add doctor"}</DialogTitle>
+              <DialogDescription>Enter the doctor's professional details.</DialogDescription>
             </DialogHeader>
             <form onSubmit={submit} className="space-y-4">
               <div>
