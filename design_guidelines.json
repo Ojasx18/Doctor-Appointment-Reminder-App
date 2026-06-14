@@ -1,0 +1,104 @@
+{
+  "theme": "Light",
+  "archetype": "1 (Organic & Earthy)",
+  "design_philosophy": "Modern hospital management dashboard designed for calm, trust, and operational efficiency. Moving away from sterile, cold 'hospital blue' to a warmer, grounded aesthetic. Relies on solid surfaces, clear typography, and structured F-pattern layouts rather than glass or excessive gradients to prevent visual fatigue.",
+  "typography": {
+    "headings": {
+      "font_family": "Work Sans, sans-serif",
+      "weights": ["500", "600"],
+      "tracking": "tracking-tight"
+    },
+    "body": {
+      "font_family": "IBM Plex Sans, sans-serif",
+      "weights": ["400", "500"]
+    },
+    "hierarchy": {
+      "h1": "text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight text-stone-900",
+      "h2": "text-2xl sm:text-3xl font-medium tracking-tight text-stone-800",
+      "h3": "text-xl sm:text-2xl font-medium text-stone-800",
+      "h4": "text-lg font-medium text-stone-800",
+      "body": "text-sm md:text-base text-stone-600",
+      "small_labels": "text-xs font-semibold uppercase tracking-[0.2em] text-stone-500"
+    }
+  },
+  "colors": {
+    "background": "bg-stone-50",
+    "surface": "bg-white",
+    "primary": {
+      "DEFAULT": "bg-emerald-600",
+      "hover": "hover:bg-emerald-700 hover:text-white",
+      "text": "text-emerald-900"
+    },
+    "secondary": {
+      "DEFAULT": "bg-stone-100",
+      "hover": "hover:bg-stone-200 hover:text-stone-900",
+      "text": "text-stone-700"
+    },
+    "text": {
+      "main": "text-stone-900",
+      "muted": "text-stone-500"
+    },
+    "borders": "border-stone-200",
+    "statuses": {
+      "scheduled": "bg-amber-100 text-amber-800 border-amber-200",
+      "completed": "bg-emerald-100 text-emerald-800 border-emerald-200",
+      "cancelled": "bg-rose-100 text-rose-800 border-rose-200"
+    }
+  },
+  "spacing_and_layout": {
+    "global_padding": "p-6 md:p-8",
+    "dashboard_grid": "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6",
+    "surface_styles": "bg-white border border-stone-200 rounded-xl shadow-sm",
+    "sidebar": "w-64 border-r border-stone-200 bg-white h-screen fixed top-0 left-0 flex flex-col",
+    "main_content": "ml-64 p-8 min-h-screen bg-stone-50"
+  },
+  "components": {
+    "buttons": {
+      "primary": "inline-flex items-center justify-center rounded-lg bg-emerald-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2",
+      "secondary": "inline-flex items-center justify-center rounded-lg border border-stone-200 bg-white px-4 py-2 text-sm font-medium text-stone-700 transition-colors hover:bg-stone-50 focus:outline-none focus:ring-2 focus:ring-stone-500 focus:ring-offset-2",
+      "destructive": "inline-flex items-center justify-center rounded-lg bg-rose-600 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-rose-700"
+    },
+    "cards": {
+      "stat_card": "flex flex-col rounded-xl border border-stone-200 bg-white p-6 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
+    },
+    "tables": {
+      "container": "w-full overflow-hidden rounded-xl border border-stone-200 bg-white shadow-sm",
+      "header": "bg-stone-50 border-b border-stone-200 text-left text-xs font-semibold uppercase tracking-wider text-stone-500",
+      "row": "border-b border-stone-100 transition-colors hover:bg-stone-50"
+    },
+    "inputs": {
+      "default": "flex h-10 w-full rounded-md border border-stone-300 bg-white px-3 py-2 text-sm placeholder:text-stone-400 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-all"
+    }
+  },
+  "motion": {
+    "transitions": "transition-all duration-200 ease-in-out",
+    "hover_effects": "hover:-translate-y-0.5 hover:shadow-md"
+  },
+  "accessibility": {
+    "focus_states": "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2",
+    "testing_attributes": "All interactive elements MUST include data-testid (e.g., data-testid='login-submit-button', data-testid='add-patient-modal-trigger')"
+  },
+  "image_urls": {
+    "login_background": {
+      "url": "https://images.unsplash.com/photo-1762625570087-6d98fca29531?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1Mjh8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBicmlnaHQlMjBtZWRpY2FsJTIwY2xpbmljJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzgxNDYzODAxfDA&ixlib=rb-4.1.0&q=85",
+      "description": "Modern waiting room with chairs. Use as the background image for the Admin Login split-screen layout."
+    },
+    "dashboard_welcome_graphic": {
+      "url": "https://images.pexels.com/photos/7578797/pexels-photo-7578797.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "description": "Female doctor discusses health chart with patient. Can be used in an empty state or a welcome banner in the dashboard."
+    }
+  },
+  "icons_library": "lucide-react",
+  "instructions_to_main_agent": [
+    "Strictly adhere to the Light theme with Organic & Earthy archetype (Stone and Emerald palette). Do NOT use dark mode, neon, or stark 'hospital blue'.",
+    "For the dashboard, use the 'Control Room' grid setup. Stat cards should stretch correctly. Use flat surfaces with a 1px border-stone-200 and shadow-sm. Avoid glassmorphism.",
+    "Data Tables are critical: Use Shadcn UI tables. Add clear status badges (Scheduled=Amber, Completed=Emerald, Cancelled=Rose) with appropriate background and text colors.",
+    "All forms (Add Doctor, Add Patient, Book Appointment) must use Shadcn Dialog/Modals or dedicated pages with Shadcn form components and validation.",
+    "Implement Sonner for toast notifications (e.g., Appointment booked, SMS sent).",
+    "Ensure all interactive elements have data-testid attributes for testing.",
+    "Implement a responsive sidebar layout. On mobile, it should collapse into a hamburger menu (Sheet component).",
+    "Ensure high contrast and readability. Text should be primarily text-stone-900 on bg-stone-50 or bg-white.",
+    "CRITICAL: The tech stack uses standard JavaScript (.js / .jsx), NOT TypeScript (.tsx / .ts). Configure shadcn/ui and all components to use pure JS and prop-types instead of TS interfaces.",
+    "For icons, utilize lucide-react as standard."
+  ]
+}
