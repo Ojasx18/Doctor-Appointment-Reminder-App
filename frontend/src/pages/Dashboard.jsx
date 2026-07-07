@@ -81,10 +81,10 @@ const Dashboard = () => {
         <div>
           <div className="text-xs uppercase tracking-[0.2em] text-stone-500">Overview</div>
           <h1 className="text-3xl md:text-4xl font-semibold text-stone-900 tracking-tight" style={{ fontFamily: "Work Sans" }}>
-            Today at the clinic
+            Appointment Overview
           </h1>
           <p className="text-stone-500 mt-1 text-sm">
-            Daily reminders run automatically at 7:00 AM. You can also send them now.
+            Manage doctors, patients, appointments, and automated reminders from one place.
           </p>
         </div>
         <Button

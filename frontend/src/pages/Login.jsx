@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
 const LOGIN_BG =
-  "https://images.unsplash.com/photo-1762625570087-6d98fca29531?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1Mjh8MHwxfHNlYXJjaHwyfHxtb2Rlcm4lMjBicmlnaHQlMjBtZWRpY2FsJTIwY2xpbmljJTIwaW50ZXJpb3J8ZW58MHx8fHwxNzgxNDYzODAxfDA&ixlib=rb-4.1.0&q=85";
+  "https://medicalschoolhq.net/wp-content/uploads/2024/09/session.jpg";
 
 const Login = () => {
   const [username, setUsername] = useState("admin");
@@ -37,12 +37,14 @@ const Login = () => {
         <img src={LOGIN_BG} alt="clinic" className="absolute inset-0 h-full w-full object-cover" />
         <div className="absolute inset-0 bg-stone-900/40" />
         <div className="absolute bottom-12 left-12 right-12 text-white">
-          <div className="text-xs uppercase tracking-[0.3em] text-emerald-200">Hospital Operations</div>
+          <div className="text-xs uppercase tracking-[0.3em] text-emerald-200">PATIENT CARE REIMAGINED</div>
           <h1 className="mt-4 text-4xl lg:text-5xl font-semibold tracking-tight" style={{ fontFamily: "Work Sans" }}>
-            Calm, reliable<br />appointment reminders.
+            Connecting Doctors<br />And Patients Seamlessly.
           </h1>
           <p className="mt-4 text-stone-200 max-w-md">
-            Manage doctors, patients and daily appointments — automated SMS keeps everyone on time.
+            Schedule appointments, send timely reminders,
+and deliver a better healthcare experience
+for every patient.
           </p>
         </div>
       </div>
@@ -54,7 +56,7 @@ const Login = () => {
               <Stethoscope className="h-5 w-5" />
             </div>
             <div>
-              <div className="font-semibold text-stone-900" style={{ fontFamily: "Work Sans" }}>ClinicReminder</div>
+              <div className="font-semibold text-stone-900" style={{ fontFamily: "Work Sans" }}>ClinicAppointments</div>
               <div className="text-xs text-stone-500">Admin Portal</div>
             </div>
           </div>
